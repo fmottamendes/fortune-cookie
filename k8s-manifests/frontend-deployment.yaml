@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  namespace: default
+  namespace: app-prd
 spec:
   replicas: 1
   selector:
@@ -19,4 +19,3 @@ spec:
         image: rafaelvzago/fortune-frontend:1.0
         ports:
         - containerPort: 80
-

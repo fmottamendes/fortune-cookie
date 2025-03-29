@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
-  namespace: default
+  namespace: app-prd
 spec:
   replicas: 1
   selector:
@@ -22,4 +22,3 @@ spec:
         env:
         - name: API_URL
           value: "https://api.adviceslip.com/advice"
-
